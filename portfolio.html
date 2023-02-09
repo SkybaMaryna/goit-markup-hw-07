@@ -14,39 +14,43 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Портфоліо</title>
   </head>
   <body>
     <header class="header">
-      <div class="container main-nav">
-        <nav class="main-nav">
-          <a href="./index.html" class="logo logo-hedder"
-            ><span class="accent">Web</span>Studio</a
-          >
-          <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Студія</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
+      <div class="header__container container">
+        <a href="./index.html" class="logo header__logo"
+          ><span class="logo__color">Web</span>Studio</a
+        >
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Студія</a>
             </li>
-            <li class="item">
-              <a href="./index.html" class="link">Контакти</a>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link nav__link--current"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Контакти</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="contacts list">
-          <li class="item">
-            <a class="contact-heder" href="mailto:info@devstudio.com">
-              <svg class="icon-contact" width="16" height="12">
+        <ul class="header__contacts">
+          <li class="header__contacts__item">
+            <a class="header__contacts__link" href="mailto:info@devstudio.com">
+              <svg class="header__contacts__icon" width="16" height="12">
                 <use href="./img/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a class="contact-heder" href="tel:+380961111111">
-              <svg class="icon-contact" width="10" height="16">
+          <li class="header__contacts__item">
+            <a class="header__contacts__link" href="tel:+380961111111">
+              <svg class="header__contacts__icon" width="10" height="16">
                 <use href="./img/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -59,7 +63,9 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="visually-hidden">Наші роботи</h1>
+          <h1 class="works__title works__title--visually-hidden">
+            Наші роботи
+          </h1>
           <ul class="filters-list list">
             <li class="item">
               <button type="button" class="filter">Усі</button>
@@ -285,27 +291,29 @@
     <footer class="footer">
       <div class="container footer-wrapper">
         <div class="contact-wrapper">
-          <a href="./index.html" class="logo logo-footer"
-            ><span class="accent">Web</span>Studio</a
+          <a href="./index.html" class="logo footer__logo"
+            ><span class="logo__color">Web</span>Studio</a
           >
           <address>
-            <ul class="contact-list list">
-              <li class="item">
+            <ul class="footer__contacts">
+              <li class="footer__contacts__item">
                 <a
                   href="https://goo.gl/maps/is1Fzqo8fPEeuyEz9"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="address"
+                  class="footer__contacts__address"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="item">
-                <a href="mailto:info@devstudio.com" class="contact-footer"
+              <li class="footer__contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="footer__contacts__link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="item">
-                <a href="tel:+380961111111" class="contact-footer"
+              <li class="footer__contacts__item">
+                <a href="tel:+380961111111" class="footer__contacts__link"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -313,17 +321,17 @@
           </address>
         </div>
         <div class="join-wrapper">
-          <p class="subtitle">Приєднуйтесь</p>
-          <ul class="social-list list">
+          <strong class="footer__subtitle">Приєднуйтесь</strong>
+          <ul class="socials">
             <li>
               <a
-                class="footer-social-link"
+                class="socials__link socials__link--theme-dark"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg
-                  class="footer-icon-social"
+                  class="socials__icon socials__icon--theme-dark"
                   width="20"
                   height="20"
                   aria-label="Інстаграм"
@@ -334,13 +342,13 @@
             </li>
             <li>
               <a
-                class="footer-social-link"
+                class="socials__link socials__link--theme-dark"
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg
-                  class="footer-icon-social"
+                  class="socials__icon socials__icon--theme-dark"
                   width="20"
                   height="20"
                   aria-label="Твітер"
@@ -351,13 +359,13 @@
             </li>
             <li>
               <a
-                class="footer-social-link"
+                class="socials__link socials__link--theme-dark"
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg
-                  class="footer-icon-social"
+                  class="socials__icon socials__icon--theme-dark"
                   width="20"
                   height="20"
                   aria-label="Фейсбук"
@@ -368,13 +376,13 @@
             </li>
             <li>
               <a
-                class="footer-social-link"
+                class="socials__link socials__link--theme-dark"
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg
-                  class="footer-icon-social"
+                  class="socials__icon socials__icon--theme-dark"
                   width="20"
                   height="20"
                   aria-label="ЛінкедІн"
@@ -386,7 +394,7 @@
           </ul>
         </div>
         <form class="sign-up-wrapper" name="sign_up">
-          <strong class="subtitle">Підпишіться на розсилку</strong>
+          <strong class="footer__subtitle">Підпишіться на розсилку</strong>
           <div class="sign-up">
             <label>
               <input
